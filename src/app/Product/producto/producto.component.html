@@ -1,0 +1,52 @@
+<form [formGroup]="productoForm">
+    <mat-card>
+            <mat-card-content>
+                <p class="subtitulo">Producto</p>
+                <!-- Asegúrate de que el formGroup esté alrededor de los controles que necesitas -->
+        
+                <mat-form-field class="mat-50">
+                    <mat-label>Nombre del producto</mat-label>
+                    <input formControlName="nombre" matInput>
+                </mat-form-field>
+                <mat-form-field class="mat-50">
+                    <mat-label>Descripcion</mat-label>
+                    <input matInput formControlName="descripcion">
+                </mat-form-field>
+                <mat-form-field class="mat-50">
+                    <mat-label>Cantidad</mat-label>
+                    <!-- <input matInput> -->
+                    <mat-select formControlName="cantidad">
+                        <mat-option ></mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>$Precio</mat-label>
+                    <!-- <input matInput> -->
+                    <textarea matInput formControlName="precio"></textarea>
+                </mat-form-field>
+        
+                <mat-form-field class="mat-50">
+                    <mat-label>$Costo</mat-label>
+                    <input matInput formControlName="costo">
+                </mat-form-field>
+
+                <mat-form-field class="mat-50">
+                    <mat-label>Medida</mat-label>
+                    <input matInput formControlName="medida">
+                </mat-form-field>
+                <mat-form-field class="mat-50">
+                    <mat-label>Proveedor</mat-label>
+                    <input matInput formControlName="proveedor">
+                </mat-form-field>
+                
+        
+            </mat-card-content>
+            <mat-card-footer>
+            <div style="margin:2%;text-align: right;">
+                <button mat-raised-button type="submit" color="primary">Guardar</button>
+                <button mat-raised-button color="warn" >Limpiar</button>
+            </div>
+            </mat-card-footer>
+    </mat-card>
+    
+    </form>

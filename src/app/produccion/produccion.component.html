@@ -1,0 +1,37 @@
+<form [formGroup]="ProduccionForm">
+    <mat-card>
+        <mat-card-content>
+            <p class="subtitulo">Produccion</p>
+            <mat-form-field class="mat-50">
+                <mat-label>produccion</mat-label>
+                <input formControlName="produccion" matInput>
+            </mat-form-field>
+            <mat-form-field class="mat-50">
+                <mat-label>Descripcion</mat-label>
+                <input matInput formControlName="descripcion">
+            </mat-form-field>
+            <mat-form-field class="mat-50">
+                <mat-label>$Costo</mat-label>
+                <input matInput formControlName="costo">
+            </mat-form-field>
+            <mat-form-field class="mat-50">
+                <mat-label>Cantidad</mat-label>
+                <!-- <input matInput> -->
+                <mat-select formControlName="cantidad">
+                    <mat-option ></mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>$Precio</mat-label>
+                <!-- <input matInput> -->
+                <textarea matInput formControlName="precio"></textarea>
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-footer>
+        <div style="margin:2%;text-align: right;">
+            <button mat-raised-button type="submit" color="primary">Guardar</button>
+            <button mat-raised-button color="warn" >Limpiar</button>
+        </div>
+        </mat-card-footer>
+    </mat-card>
+</form>

@@ -1,0 +1,47 @@
+
+<form [formGroup]="UsuarioForm">
+    <mat-card>
+            <mat-card-content>
+                <p class="subtitulo">Usuario</p>
+                <mat-form-field class="mat-50">
+                    <mat-label>Nombre</mat-label>
+                    <input formControlName="nombre" matInput>
+                </mat-form-field>
+                <mat-form-field class="mat-50">
+                    <mat-label>Apellido</mat-label>
+                    <input formControlName="apellido" matInput>
+                </mat-form-field>
+                <mat-form-field class="mat-50">
+                    <mat-label>Nombre de usuario</mat-label>
+                    <input formControlName="userName" matInput>
+                </mat-form-field>
+                <mat-form-field class="mat-50">
+                    <mat-label>Contraseña</mat-label>
+                    <!-- <input matInput> -->
+                    <mat-select formControlName="password">
+                        <mat-option ></mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="mat-50">
+                    <mat-label>Correo</mat-label>
+                    <input matInput formControlName="email">
+                </mat-form-field>
+                <mat-form-field class="mat-50">
+                    <mat-label>Rol</mat-label>
+                    <mat-select formControlName="role">
+                        <mat-option value="admin">Administrador</mat-option>
+                        <mat-option value="empleado">Cliente</mat-option>
+                    </mat-select>
+                </mat-form-field>
+        
+                
+        
+            </mat-card-content>
+            <mat-card-footer>
+            <div style="margin:2%;text-align: right;">
+                <button mat-raised-button type="submit" color="primary">Guardar</button>
+                <button mat-raised-button color="warn" >Limpiar</button>
+            </div>
+        </mat-card-footer>
+    </mat-card>
+</form>

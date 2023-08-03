@@ -1,0 +1,71 @@
+<mat-toolbar color="primary" class="mat-elevation-z8">
+    <button (click)="drawer.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>      
+      <img src="./assets/logo.png" alt="hola" width="100" heigh="50">
+    </span>
+    <span class="example-spacer"></span>
+    <button routerLink="" mat-button>Inicio</button>
+    <button routerLink="Producto" mat-button>Nosotros</button>
+    <button routerLink="Producto" mat-button>Administracion</button>
+
+  
+    <!-- <mat-menu #company="matMenu">
+        <button mat-menu-item>Term</button>
+        <button mat-menu-item>Tax</button>
+        <button mat-menu-item>Currency</button>
+    </mat-menu>
+    <mat-menu #customer="matMenu">
+        <button mat-menu-item>Type</button>
+        <button mat-menu-item>Tax</button>
+    </mat-menu>
+    <mat-menu #product="matMenu">
+        <button mat-menu-item>Category</button>
+        <button [matMenuTriggerFor]="variant" mat-menu-item>Variant</button>
+        <button mat-menu-item>UOM</button>
+    </mat-menu>
+  
+    <mat-menu #variant="matMenu">
+        <button mat-menu-item>Color</button>
+        <button mat-menu-item>Size</button>
+    </mat-menu> -->
+  
+    <button (click)="badgevisibility()"  mat-icon-button>
+    </button>
+    <a mat-raised-button color="accent">Salir -></a>
+  </mat-toolbar>
+
+  <mat-drawer-container autosize>
+    <mat-drawer #drawer opened="false" mode="side" position="start">
+    <mat-nav-list>
+        <mat-list-item>
+            <button routerLink="card" routerLink="Producto" mat-button><mat-icon>assessment</mat-icon> Producto</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="Recetas" mat-button><mat-icon>inventory_2</mat-icon> Recetas</button>
+        </mat-list-item> 
+        <mat-list-item>
+            <button routerLink="Materiap" mat-button><mat-icon>inventory_2</mat-icon> Materia prima</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="Produccion" mat-button><mat-icon>fact_check</mat-icon> Produccion</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button routerLink="table"  mat-button><mat-icon>leaderboard</mat-icon> Ventas</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button mat-button routerLink="Proveedores"><mat-icon>store</mat-icon> Proveedores</button>
+        </mat-list-item>
+        <mat-list-item>
+            <button mat-button routerLink="Usuario"><mat-icon>supervisor_account</mat-icon> Usuarios</button>
+        </mat-list-item>
+        
+    </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <div style="text-align: center;min-height: 600px;">
+            <router-outlet></router-outlet>
+            </div>
+    </mat-drawer-content>
+  </mat-drawer-container>

@@ -1,0 +1,57 @@
+
+<form [formGroup]="MateriaPForm">
+    <mat-card>
+
+        <mat-card-content>
+            <p class="subtitulo">Materia Prima</p>
+            <mat-form-field class="mat-50">
+                <mat-label>Nombre del material</mat-label>
+                <input formControlName="nombre" matInput>
+            </mat-form-field>
+            
+            <mat-form-field class="mat-50">
+                <mat-label>Descripcion</mat-label>
+                <input matInput formControlName="descripcion">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Cantidad</mat-label>
+                <!-- <input matInput> -->
+                <textarea matInput formControlName="cantidad"></textarea>
+            </mat-form-field>
+            <mat-form-field class="mat-50">
+                <mat-label>$Precio</mat-label>
+                <input matInput formControlName="precio">
+            </mat-form-field>
+
+            <mat-form-field class="mat-50">
+                <mat-label>$Costo</mat-label>
+                <input matInput formControlName="costo">
+            </mat-form-field>
+    
+            <mat-form-field class="mat-50">
+                <mat-label>Unidad</mat-label>
+                <mat-select formControlName="medida">
+                    <mat-option value="metros">Metros</mat-option>
+                    <mat-option value="pies">Pies</mat-option>
+                    <mat-option value="centimetros">Centímetros</mat-option>
+                    <mat-option value="pulgadas">Pulgadas</mat-option>
+                </mat-select>
+            </mat-form-field>
+            
+    
+            <mat-form-field>
+                <mat-label>Ingresa el proveedor o proveedores</mat-label>
+                <!-- <input matInput> -->
+                <textarea matInput formControlName="proveedor"></textarea>
+            </mat-form-field>
+    
+        </mat-card-content>
+        <mat-card-footer>
+        <div style="margin:2%;text-align: right;">
+            <button mat-raised-button type="submit" color="primary">Guardar</button>
+            <button mat-raised-button color="warn" >Limpiar</button>
+        </div>
+        </mat-card-footer>
+    </mat-card>
+    
+    </form>
