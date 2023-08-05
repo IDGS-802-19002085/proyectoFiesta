@@ -23,13 +23,41 @@
       </div>
     </div>
   </section>
-<!-- Welcome section -->
+
+
+
+    <!-- Categories section -->
+    <div class="container">
+      <h1 class="subtituloe">Compra por ocasión</h1>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" alt="Articulos para fiestas">
+            <h5 class="card-title">Articulos para fiestas</h5>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp" alt="Cumpleaños y celebraciones">
+            <h5 class="card-title">Cumpleaños y celebraciones</h5>
+          </div>
+        </div>      
+        <div class="col-lg-4 col-md-6">
+          <div class="product-card">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp" alt="Manualidades">
+            <h5 class="card-title">Manualidades</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  
+<!-- Welcome section
 <section class="welcome-section text-center py-5 bajo">
   <div class="container">
     <h2 class="subtitulo">¡Lupita regalos y algo mas!</h2>
-    <a href="#" class="btn btn-primary">Ver más</a>
   </div>
-</section>
+</section> -->
 
 
   <!-- Call to action section -->
@@ -49,31 +77,6 @@
   </div>
   <br><br>
 
-  <!-- Categories section -->
-  <div class="container">
-    <h1 class="subtitulo">Compra por ocasión</h1>
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="product-card">
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" alt="Articulos para fiestas">
-          <h5 class="card-title">Articulos para fiestas</h5>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="product-card">
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp" alt="Cumpleaños y celebraciones">
-          <h5 class="card-title">Cumpleaños y celebraciones</h5>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="product-card">
-          <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp" alt="Manualidades">
-          <h5 class="card-title">Manualidades</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br>
 
 
   <!-- Footer -->
@@ -82,4 +85,15 @@
   </footer>
 </body>
 
+
+<script>
+  function zoomIn(element) {
+  element.style.transform = "scale(1.1)";
+}
+
+function zoomOut(element) {
+  element.style.transform = "scale(1)";
+}
+
+</script>
 </html>

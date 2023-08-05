@@ -54,12 +54,24 @@
 
   }
   .bajo{
-    background-color: #d1caca;
+    background-color: #efe9e9e0;
   }
 .subtitulo{
     text-align: center;
     color: rgb(217, 40, 217);
     font-size: 8rem; /* Tamaño de la fuente muy grande (ajusta según lo que desees) */
+    font-weight: bold; /* Fuente en negrita */
+    margin-top: 40px; 
+    padding-bottom: 30px;
+    font-family: fantasy;
+
+
+  }
+
+  .subtituloe{
+    text-align: center;
+    color: rgb(217, 40, 217);
+    font-size: 5rem; /* Tamaño de la fuente muy grande (ajusta según lo que desees) */
     font-weight: bold; /* Fuente en negrita */
     margin-top: 40px; 
     padding-bottom: 30px;
@@ -149,3 +161,11 @@
 
 
 
+
+.product-card {
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.1);
+}
